@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NavSelectedItemSample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NavSelectedItemSample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

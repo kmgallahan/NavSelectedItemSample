@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window
+  x:Class="NavSelectedItemSample.MainWindow"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:local="using:NavSelectedItemSample"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  mc:Ignorable="d">
+
+  <Page Loaded="LoadedEventHandler">
+    <NavigationView
+      IsBackButtonVisible="Collapsed"
+      IsPaneToggleButtonVisible="False"
+      IsSettingsVisible="False"
+      MenuItemsSource="{x:Bind ViewModel.NavigationOptions, Mode=OneWay}"
+      PaneDisplayMode="Left"
+      SelectedItem="{x:Bind ViewModel.SelectedNavigationOption, Mode=TwoWay}" />
+  </Page>
+</Window>
